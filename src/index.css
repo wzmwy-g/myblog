@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义滚动栏 */
+::-webkit-scrollbar {
+  width: 8px; /* 滚动栏宽度 */
+}
+
+/* 滚动栏滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* 滑块颜色 */
+  border-radius: 5px; /* 滑块圆角 */
+}
+
+/* 定义滚动栏滑块在悬停时的样式 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 滚动栏轨道 */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 轨道颜色 */
+}
+
+/* 设置光标样式 */
+body {
+  /* 这里鼠标样式只能设置一个，具体样式在tailwind配置中自定义 */
+  cursor: url("./assets/cursor/pointer.cur"), auto;
+}
